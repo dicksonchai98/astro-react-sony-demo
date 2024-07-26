@@ -1,0 +1,35 @@
+---
+import VideoPage from "../components/VideoPage";
+import Header from '../components/layout/Header'
+import Footer from '../components/layout/Footer'
+import GlobalStyles from '../styles/GlobalStyles.astro'
+---
+
+<html lang='en' class='scroll-smooth'>
+  <head>
+    <meta charset='utf-8' />
+    <meta
+      name='title'
+      content='Sony SOUNDBAR線上選購 | 台灣索尼官方網站 | Sony Taiwan'
+    />
+    <meta
+      name='description'
+      content='α Sony SOUNDBAR 線上選購網站提供用戶實際居家環境和電視尺寸的模擬，進而提供適合的 SOUNDBAR 機型推薦'
+    />
+    <meta
+      name='keywords'
+      content='Xperia, α,行動電話,Cyber-shot,數位相機,單眼相機,微單眼,BRAVIA,液晶電視,Walkman,隨身聽,記憶卡,BD,藍光播放器,行動電源,Sony,官方,會員,商品,產品,購物,網站,配件,鏡頭,訂單,專用,專屬'
+    />
+    <meta name='robots' content='index, follow' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='generator' content={Astro.generator} />
+    <link rel='icon' type='image/svg+xml' href='/sony.ico' />
+    <title>Sony SOUNDBAR線上選購 | 台灣索尼官方網站 | Sony Taiwan</title>
+    <GlobalStyles />
+  </head>
+  <body>
+	<Header></Header>
+	<VideoPage client:load></VideoPage>
+	<Footer></Footer>
+  </body>
+</html>
